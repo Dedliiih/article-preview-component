@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@200;400&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@100;400;500;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Nunito:wght@200&family=Open+Sans:wght@300;700;800&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Poppins:wght@200;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Manrope;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--light-grayish-blue);
+}
+
+.gray__text {
+    color: var(--very-dark-grayish-blue);
+}
+
+.light__text {
+    color: var(--grayish-blue);
+}
+
+.flex__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+}
+
+.card {
+    width: 54vh;
+    height: 90vh;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.card__header-image {
+    width: 100%;
+    clip-path: inset(0 0 17% 0);
+    border-radius: 5px
+}
+
+.card__text, .card__aside {
+    padding: 40px;
+}
+
+.card__text {
+    margin-top: -70px;
+    margin-bottom: -60px;
+}
+
+
+.main__parragraph {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+
+}
+
+.sub__parragraph {
+    color: var(--desaturated-dark-blue);
+    font-size: 15px;
+    line-height: 25px;
+    
+}
+
+.card__aside {
+    display: flex;
+    flex-direction: row;
+}
+
+.card__aside-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.card__aside-info > p{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 3px 0 0 17px;
+}    
+
+.card__aside-info > p > span {
+    margin-top: 3px;
+    font-weight: 500;
+}
+
+
+.card__aside-icon-share {
+    left: 75px;
+    top: 12px;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: var(--light-grayish-blue);
+    background-size: cover;
+}
+
+@media (min-width: 720px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 125vh;
+        height: 50vh;
+    }
+
+    .card__header {
+        
+    }
+
+    .card__header-image {
+        height: 100%;
+        width: 350px;
+        clip-path: none;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .card__content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+    }
+
+    .card__text {
+        margin-top: -30px;
+        margin-bottom: -40px;
+    }
+
+    .main__parragraph {
+        font-size: 23px;
+        line-height: 35px;
+        margin-bottom: 0px;
+    }
+
+    .sub__parragraph {
+        margin-bottom: -10px;
+    }
+
+    .card__aside-icon-share {
+        margin-left: 100px;
+    }
+}
